@@ -44,7 +44,6 @@ function App() {
     })
     newTaskList[test].complete = !newTaskList[test].complete;
     setTasks(newTaskList);
-    console.log(newTaskList);
   }
 
   const handleClearCompletedTask = () => {

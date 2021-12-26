@@ -5,12 +5,6 @@ export default function TodoList({taskList, handleCheckboxClick}) {
         handleCheckboxClick(id);
     }
     const renderTodoList = () => {
-        // const TodoList = [];
-        // for(let i = 0; i < taskList.length; i++){
-        //     TodoList.push(<div>{taskList[i].name}</div>);
-        // }
-        // return TodoList;
-
         const arrayOfTaskElements = taskList.map((task, index) => {
             return (
                 <div key={index}>
@@ -21,7 +15,6 @@ export default function TodoList({taskList, handleCheckboxClick}) {
         });
         return arrayOfTaskElements;
     }
-    console.log(taskList);
     return (
         <div>
             {renderTodoList()}
